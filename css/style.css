@@ -29,17 +29,51 @@ body {
   background-color: var(--primary-white-color);
   font-family: Roboto, sans-serif;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+  outline: 2px solid tomato;
+}
+
 /* Header */
 
 .page-header {
   background-color: var(--primary-white-color);
+  margin-bottom: 94px;
 }
+.logo-link-header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+}
+
 .logo-link {
   color: var(--accent-color);
   font-family: Raleway, cursive;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
   text-decoration: none;
 }
 
@@ -65,6 +99,9 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 344px;
 }
 
 .list {
@@ -80,12 +117,15 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  margin-right: 50px;
 }
 
 /* Герой */
 
 .hero {
   background-color: var(--background-black-color);
+  text-align: center;
+  margin-bottom: 94px;
 }
 
 .hero-title {
@@ -97,6 +137,10 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
+  padding-top: 200px;
+  margin-bottom: 30px;
+  padding-left: 252px;
+  padding-right: 252px;
 }
 
 /* Button */
@@ -112,6 +156,7 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
   text-align: center;
+  margin-bottom: 200px;
 }
 .button-primary:hover,
 .button-primary:focus {
@@ -130,6 +175,7 @@ body {
   cursor: pointer;
   border-radius: 4px;
   border: none;
+  margin-right: 8px;
 }
 .secondary-button:hover,
 .secondary-button:focus {
@@ -141,7 +187,13 @@ body {
 
 .section {
   color: var(--secondary-text-color);
+  margin-bottom: 94px;
 }
+
+.centered {
+  text-align: center;
+}
+
 .section-title {
   color: var(--title-text-color);
   font-style: normal;
@@ -149,6 +201,7 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .visually-hidden {
@@ -163,6 +216,7 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
+
 .feature-list {
 }
 
@@ -174,6 +228,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 30px;
+  margin-bottom: 10px;
 }
 
 .title-text {
@@ -182,17 +238,28 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-bottom: 24px;
+  margin-right: 30px;
 }
 
 /* Чим ми займаємося */
 
-.work-list {
+.filter {
+  margin-bottom: 34px;
 }
 
-.work-items {
+.work-list > .item {
+  margin-bottom: 94px;
+  margin-right: 30px;
 }
 
 .work-box {
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+
+.work-image {
+  margin-bottom: 20px;
 }
 
 .work-title {
@@ -200,6 +267,7 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
 .work-text {
@@ -209,6 +277,7 @@ body {
   line-height: 1.88;
   letter-spacing: 0.03em;
   text-decoration: none;
+  padding-bottom: 20px;
 }
 
 /* Наша команда */
@@ -223,6 +292,12 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin-bottom: 94px;
+  margin-right: 30px;
+}
+
+.team-image {
+  margin-bottom: 30px;
 }
 
 .title-team {
@@ -232,6 +307,8 @@ body {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .title-text-team {
@@ -240,11 +317,18 @@ body {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
+  text-align: center;
 }
 /* Футер */
 
 .footer {
   background-color: var(--background-black-color);
+}
+
+.logo-link-footer {
+  padding-top: 60px;
+  margin-bottom: 20px;
 }
 
 .logo-footer {
@@ -260,6 +344,7 @@ body {
   color: var(--accent-color);
 }
 .addres {
+  padding-bottom: 60px;
 }
 
 .info-list {
@@ -281,4 +366,8 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.info-item {
+  margin-bottom: 9px;
 }
