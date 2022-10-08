@@ -23,7 +23,7 @@
   <body>
     <!-- Шапка сайту -->
     <header class="page-header">
-      <div class="container">
+      <div class="container main-logo">
         <div class="logo-link-header">
           <a href="#" class="logo-link"
             >Web<span class="logo-header">Studio</span></a
@@ -31,21 +31,21 @@
         </div>
         <nav>
           <ul class="site-nav list">
-            <li><a href="#" class="link">Студія</a></li>
-            <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
-            <li><a href="#" class="link">Контакти</a></li>
+            <li class="item"><a href="#" class="link">Студія</a></li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфоліо</a>
+            </li>
+            <li class="item"><a href="#" class="link">Контакти</a></li>
           </ul>
         </nav>
         <ul class="aside-header list">
-          <li>
-            <a href="mailto:info@devstudio.com" class="link link-header"
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="link"
               >info@devstudio.com</a
             >
           </li>
-          <li>
-            <a href="tel:+380961111111" class="link link-header"
-              >+38 096 111 11 11</a
-            >
+          <li class="item">
+            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -54,7 +54,7 @@
     <main>
       <!-- Герой -->
       <section class="hero">
-        <div class="container">
+        <div class="container hero-container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button class="button-primary" type="button">Замовити послугу</button>
         </div>
@@ -64,27 +64,27 @@
         <div class="container">
           <h2 class="section-title visually-hidden">Переваги</h2>
           <ul class="feature-list list">
-            <li>
+            <li class="item">
               <h3 class="title">Увага до деталей</h3>
               <p class="title-text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Пунктуальність</h3>
               <p class="title-text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Планування</h3>
               <p class="title-text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Сучасні технології</h3>
               <p class="title-text">
                 Значимість цих проблем настільки очевидна, що реалізація
@@ -127,7 +127,7 @@
         </div>
       </section>
       <!-- Наша команда-->
-      <section class="section">
+      <section class="section team-section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list list">
