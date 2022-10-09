@@ -44,7 +44,7 @@ ul {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -138,6 +138,10 @@ img {
 .aside-header {
   display: flex;
   margin-left: auto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .aside-header .item + .item {
@@ -146,21 +150,14 @@ img {
 /* Герой */
 
 .hero {
+  padding: 200px 0;
   background-color: var(--background-black-color);
   text-align: center;
-  margin-bottom: 94px;
-}
-
-.hero-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 200px 252px;
 }
 
 .hero-title {
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
+  max-width: 696px;
 
   color: var(--primary-white-color);
   font-weight: 900;
@@ -195,6 +192,7 @@ img {
 }
 
 .secondary-button {
+  padding: 6px 22px;
   color: var(--primary-text-color);
   background-color: var(--secondary-white-color);
   font-family: "Roboto";
@@ -214,8 +212,12 @@ img {
 /* Переваги */
 
 .section {
-  margin-bottom: 94px;
+  padding: 94px 0;
   color: var(--secondary-text-color);
+}
+
+.hiden-section {
+  padding-bottom: 0;
 }
 
 .centered {
